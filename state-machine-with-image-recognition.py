@@ -5,3 +5,4 @@ import pyautogui
 import time
 import threading
 
+app = Flask(__name__)

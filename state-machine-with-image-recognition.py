@@ -53,3 +53,4 @@ def find_and_click(image_path):
 
             if target_image is None:
                 raise FileNotFoundError(f"Image not found or invalid format: {image_path}")
+

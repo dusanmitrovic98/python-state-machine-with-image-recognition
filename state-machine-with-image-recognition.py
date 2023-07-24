@@ -36,3 +36,4 @@ states = [
         "action": "End automation",
         "duration": 0,  
         "next_state": -1 
+    }

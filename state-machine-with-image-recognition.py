@@ -11,3 +11,4 @@ app = Flask(__name__)
 states = [
          {
         "id": 0,
+        "image_path": "", 

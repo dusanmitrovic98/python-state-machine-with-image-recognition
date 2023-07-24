@@ -39,3 +39,4 @@ states = [
     }
 ]
 
+# Global variable to keep track of the automation thread

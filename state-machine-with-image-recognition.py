@@ -71,3 +71,4 @@ def find_and_click(image_path):
             if max_val >= threshold:
                 # Get the coordinates of the best match
                 x, y = max_loc
+

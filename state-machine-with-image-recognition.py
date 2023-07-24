@@ -32,3 +32,4 @@ states = [
     },
     {
         "id": 99,
+        "image_path": "",  

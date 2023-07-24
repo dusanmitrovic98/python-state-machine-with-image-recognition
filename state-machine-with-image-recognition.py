@@ -28,3 +28,4 @@ states = [
         "image_path": "C:\\Users\\BK2O198\\Documents\\Workstation\\automation\\image-to-click.jpg",
         "action": "Click",
         "duration": 1,
+        "next_state": 1  

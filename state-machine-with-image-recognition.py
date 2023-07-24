@@ -68,3 +68,4 @@ def find_and_click(image_path):
             # Set a threshold for a good match (you can adjust this as needed)
             threshold = 0.5 
 
+            if max_val >= threshold:

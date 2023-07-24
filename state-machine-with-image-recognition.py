@@ -55,3 +55,4 @@ def find_and_click(image_path):
                 raise FileNotFoundError(f"Image not found or invalid format: {image_path}")
 
             # Get the screen resolution
+            screen_width, screen_height = pyautogui.size()

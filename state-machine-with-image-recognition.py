@@ -22,3 +22,4 @@ states = [
         "action": "Click",
         "duration": 1,  
         "next_state": 2  
+    },

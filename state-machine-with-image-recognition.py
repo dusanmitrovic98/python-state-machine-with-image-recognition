@@ -44,3 +44,4 @@ automation_thread = None
 stop_automation_flag = False
 
 def find_and_click(image_path):
+    if image_path:

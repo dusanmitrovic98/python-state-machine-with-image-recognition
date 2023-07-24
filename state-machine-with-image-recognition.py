@@ -81,3 +81,4 @@ def find_and_click(image_path):
                 pyautogui.click()
                 print("Click action performed successfully.")
             else:
+                print("Target image not found on the screen.")

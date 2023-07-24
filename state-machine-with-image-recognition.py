@@ -75,3 +75,4 @@ def find_and_click(image_path):
                 # Move the mouse to the center of the matched image and click
 
                 # Move the mouse to the center of the matched image and click
+                x += target_image.shape[1] // 2

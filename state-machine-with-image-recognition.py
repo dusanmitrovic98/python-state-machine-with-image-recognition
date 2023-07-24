@@ -16,3 +16,4 @@ states = [
         "duration": 5,  
         "next_state": 1  
     },
+    {

@@ -8,3 +8,4 @@ import threading
 app = Flask(__name__)
 
 # Define the list of states and their corresponding images, actions, and IDs
+states = [

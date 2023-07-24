@@ -57,3 +57,4 @@ def find_and_click(image_path):
             # Get the screen resolution
             screen_width, screen_height = pyautogui.size()
 
+            # Take a screenshot of the screen and convert it to grayscale

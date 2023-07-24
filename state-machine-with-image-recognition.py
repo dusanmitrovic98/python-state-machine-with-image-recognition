@@ -37,3 +37,4 @@ states = [
         "duration": 0,  
         "next_state": -1 
     }
+]

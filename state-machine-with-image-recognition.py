@@ -33,3 +33,4 @@ states = [
     {
         "id": 99,
         "image_path": "",  
+        "action": "End automation",

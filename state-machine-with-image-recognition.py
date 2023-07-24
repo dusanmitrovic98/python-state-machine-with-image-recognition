@@ -89,3 +89,4 @@ def find_and_click(image_path):
 
 def automate_states(states):
     global stop_automation_flag
+

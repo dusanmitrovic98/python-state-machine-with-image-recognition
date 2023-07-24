@@ -87,3 +87,4 @@ def find_and_click(image_path):
     else:
         print("No action performed for this state.")
 
+def automate_states(states):

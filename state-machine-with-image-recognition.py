@@ -88,3 +88,4 @@ def find_and_click(image_path):
         print("No action performed for this state.")
 
 def automate_states(states):
+    global stop_automation_flag

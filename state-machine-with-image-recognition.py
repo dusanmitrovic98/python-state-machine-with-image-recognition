@@ -84,3 +84,4 @@ def find_and_click(image_path):
                 print("Target image not found on the screen.")
         except Exception as e:
             print("An error occurred:", e)
+    else:

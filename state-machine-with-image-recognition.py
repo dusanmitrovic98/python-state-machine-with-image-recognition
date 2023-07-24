@@ -12,3 +12,4 @@ states = [
          {
         "id": 0,
         "image_path": "", 
+        "action": "No action",

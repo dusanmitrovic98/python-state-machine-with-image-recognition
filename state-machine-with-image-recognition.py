@@ -14,3 +14,4 @@ states = [
         "image_path": "", 
         "action": "No action",
         "duration": 5,  
+        "next_state": 1  

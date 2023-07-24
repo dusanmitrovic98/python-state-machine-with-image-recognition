@@ -85,3 +85,4 @@ def find_and_click(image_path):
         except Exception as e:
             print("An error occurred:", e)
     else:
+        print("No action performed for this state.")

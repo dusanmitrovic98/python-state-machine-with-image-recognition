@@ -42,3 +42,4 @@ states = [
 # Global variable to keep track of the automation thread
 automation_thread = None
 stop_automation_flag = False
+

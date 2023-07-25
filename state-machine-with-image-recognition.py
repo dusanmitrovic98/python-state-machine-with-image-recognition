@@ -73,3 +73,4 @@ def automate_states(states):
 
         if current_state is None:
             print(f"State with ID {current_state_id} not found.")
+            break

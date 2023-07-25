@@ -19,3 +19,4 @@ def find_and_click(image_path):
     try:
         if not image_path:
             raise ValueError("Image path is empty. No action performed for this state.")
+        

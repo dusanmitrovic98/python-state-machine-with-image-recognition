@@ -9,3 +9,4 @@ import os
 from states import states
 from index import INDEX_PAGE
 
+app = Flask(__name__)

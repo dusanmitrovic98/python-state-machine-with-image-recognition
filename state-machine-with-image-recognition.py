@@ -64,3 +64,4 @@ def automate_states(states):
     current_state_id = 0  
 
     while True:
+        if stop_automation_flag:

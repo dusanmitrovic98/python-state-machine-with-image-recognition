@@ -58,3 +58,4 @@ def find_and_click(image_path):
     except Exception as e:
         print("An unexpected error occurred:", e)
 
+def automate_states(states):

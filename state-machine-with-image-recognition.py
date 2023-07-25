@@ -11,3 +11,4 @@ from index import INDEX_PAGE
 
 app = Flask(__name__)
 
+# Global variable to keep track of the automation thread

@@ -54,3 +54,4 @@ def find_and_click(image_path):
     except ValueError as ve:
         print("ValueError:", ve)
     except FileNotFoundError as fe:
+        print("FileNotFoundError:", fe)

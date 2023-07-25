@@ -34,3 +34,4 @@ def find_and_click(image_path):
 
         # Perform template matching to find the target image on the screen
         result = cv2.matchTemplate(screenshot, target_image, cv2.TM_CCOEFF_NORMED)
+        _, max_val, _, max_loc = cv2.minMaxLoc(result)

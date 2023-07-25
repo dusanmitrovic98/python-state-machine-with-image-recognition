@@ -33,3 +33,4 @@ def find_and_click(image_path):
         screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2GRAY)
 
         # Perform template matching to find the target image on the screen
+        result = cv2.matchTemplate(screenshot, target_image, cv2.TM_CCOEFF_NORMED)

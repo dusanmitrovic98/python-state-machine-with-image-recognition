@@ -59,3 +59,4 @@ def find_and_click(image_path):
         print("An unexpected error occurred:", e)
 
 def automate_states(states):
+    global stop_automation_flag

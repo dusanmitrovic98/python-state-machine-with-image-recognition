@@ -21,3 +21,4 @@ def find_and_click(image_path):
             raise ValueError("Image path is empty. No action performed for this state.")
         
         target_image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+

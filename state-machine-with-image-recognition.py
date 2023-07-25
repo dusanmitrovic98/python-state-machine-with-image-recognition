@@ -32,3 +32,4 @@ def find_and_click(image_path):
         screenshot = pyautogui.screenshot(region=(0, 0, screen_width, screen_height))
         screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2GRAY)
 
+        # Perform template matching to find the target image on the screen

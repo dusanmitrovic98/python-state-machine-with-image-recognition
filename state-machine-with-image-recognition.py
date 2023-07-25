@@ -36,3 +36,4 @@ def find_and_click(image_path):
         result = cv2.matchTemplate(screenshot, target_image, cv2.TM_CCOEFF_NORMED)
         _, max_val, _, max_loc = cv2.minMaxLoc(result)
 
+        # Set a threshold for a good match (you can adjust this as needed)

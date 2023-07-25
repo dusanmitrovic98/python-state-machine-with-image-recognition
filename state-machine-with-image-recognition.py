@@ -53,3 +53,4 @@ def find_and_click(image_path):
             print("Target image not found on the screen.")
     except ValueError as ve:
         print("ValueError:", ve)
+    except FileNotFoundError as fe:

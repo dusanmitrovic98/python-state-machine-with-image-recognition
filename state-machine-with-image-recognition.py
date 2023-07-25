@@ -49,3 +49,4 @@ def find_and_click(image_path):
             pyautogui.moveTo(x, y)
             pyautogui.click()
             print("Click action performed successfully.")
+        else:

@@ -84,3 +84,4 @@ def automate_states(states):
         time.sleep(1)  # Wait for 1 second before starting the countdown
 
         for remaining_time in range(duration, 0, -1):
+            if stop_automation_flag:

@@ -80,3 +80,4 @@ def automate_states(states):
         duration = current_state["duration"]
         next_state_id = current_state["next_state"]
 
+        print(f"State ID: {current_state_id} -> Image: {image_path} -> Action: {action}")

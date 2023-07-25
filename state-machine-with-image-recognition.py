@@ -75,3 +75,4 @@ def automate_states(states):
             print(f"State with ID {current_state_id} not found.")
             break
 
+        image_path = current_state["image_path"]

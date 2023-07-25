@@ -17,3 +17,4 @@ stop_automation_flag = False
 
 def find_and_click(image_path):
     try:
+        if not image_path:

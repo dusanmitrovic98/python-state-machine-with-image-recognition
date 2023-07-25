@@ -69,3 +69,4 @@ def automate_states(states):
             break
 
         # Find the current state based on the ID
+        current_state = next((state for state in states if state["id"] == current_state_id), None)

@@ -48,3 +48,4 @@ def find_and_click(image_path):
             y += target_image.shape[0] // 2
             pyautogui.moveTo(x, y)
             pyautogui.click()
+            print("Click action performed successfully.")

@@ -57,3 +57,4 @@ def find_and_click(image_path):
         print("FileNotFoundError:", fe)
     except Exception as e:
         print("An unexpected error occurred:", e)
+

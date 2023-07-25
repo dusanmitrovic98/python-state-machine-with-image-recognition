@@ -76,3 +76,4 @@ def automate_states(states):
             break
 
         image_path = current_state["image_path"]
+        action = current_state["action"]

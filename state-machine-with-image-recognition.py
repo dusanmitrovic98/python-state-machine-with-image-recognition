@@ -22,3 +22,4 @@ def find_and_click(image_path):
         
         target_image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
+        if target_image is None:

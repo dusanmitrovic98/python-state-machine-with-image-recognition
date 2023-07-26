@@ -118,3 +118,4 @@ def automate_states(states):
                 break
 
             print(f"Next action in {remaining_time} seconds...")
+            time.sleep(1)

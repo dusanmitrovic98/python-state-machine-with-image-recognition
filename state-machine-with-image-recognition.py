@@ -160,3 +160,4 @@ def stop_automation():
 
     return jsonify({"status": "success", "message": "Automation stopped."})
 
+if __name__ == "__main__":

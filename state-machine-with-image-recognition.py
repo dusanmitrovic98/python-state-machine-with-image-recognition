@@ -100,3 +100,4 @@ def automate_states(states):
         # Find the current state based on the ID
         current_state = next((state for state in states if state["id"] == current_state_id), None)
 
+        if current_state is None:

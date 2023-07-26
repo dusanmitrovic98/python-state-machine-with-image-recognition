@@ -154,3 +154,4 @@ def start_automation():
 def stop_automation():
     global automation_thread, stop_automation_flag
 
+    if automation_thread and automation_thread.is_alive():

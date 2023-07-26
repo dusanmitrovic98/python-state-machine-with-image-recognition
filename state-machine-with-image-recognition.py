@@ -139,3 +139,4 @@ def index():
 
 @app.route("/start")
 def start_automation():
+    global automation_thread, stop_automation_flag

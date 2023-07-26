@@ -146,3 +146,4 @@ def start_automation():
 
     # Start the automation in a new thread
     automation_thread = threading.Thread(target=automate_states, args=(states, ))
+    automation_thread.start()

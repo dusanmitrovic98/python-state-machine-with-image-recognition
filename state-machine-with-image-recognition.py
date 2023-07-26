@@ -141,3 +141,4 @@ def index():
 def start_automation():
     global automation_thread, stop_automation_flag
 
+    # Set stop_automation_flag to False before starting automation

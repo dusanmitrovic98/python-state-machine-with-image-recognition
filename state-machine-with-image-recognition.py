@@ -120,3 +120,4 @@ def automate_states(states):
             print(f"Next action in {remaining_time} seconds...")
             time.sleep(1)
 
+        if not stop_automation_flag:

@@ -158,3 +158,4 @@ def stop_automation():
         stop_automation_flag = True
         automation_thread.join()  # Wait for the automation thread to finish
 
+    return jsonify({"status": "success", "message": "Automation stopped."})

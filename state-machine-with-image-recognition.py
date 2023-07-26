@@ -117,3 +117,4 @@ def automate_states(states):
                 print("Automation stopped.")
                 break
 
+            print(f"Next action in {remaining_time} seconds...")

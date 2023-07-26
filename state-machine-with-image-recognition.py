@@ -145,3 +145,4 @@ def start_automation():
     stop_automation_flag = False
 
     # Start the automation in a new thread
+    automation_thread = threading.Thread(target=automate_states, args=(states, ))

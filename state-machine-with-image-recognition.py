@@ -110,3 +110,4 @@ def automate_states(states):
         next_state_id = current_state["next_state"]
 
         print(f"State ID: {current_state_id} -> Image: {image_path} -> Action: {action}")
+        time.sleep(1)  # Wait for 1 second before starting the countdown

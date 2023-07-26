@@ -97,3 +97,4 @@ def automate_states(states):
             print("Automation stopped.")
             break
 
+        # Find the current state based on the ID

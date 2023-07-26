@@ -107,3 +107,4 @@ def automate_states(states):
         image_path = current_state["image_path"]
         action = current_state["action"]
         duration = current_state["duration"]
+        next_state_id = current_state["next_state"]

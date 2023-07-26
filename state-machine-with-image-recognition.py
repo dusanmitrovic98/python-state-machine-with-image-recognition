@@ -144,3 +144,4 @@ def start_automation():
     # Set stop_automation_flag to False before starting automation
     stop_automation_flag = False
 
+    # Start the automation in a new thread

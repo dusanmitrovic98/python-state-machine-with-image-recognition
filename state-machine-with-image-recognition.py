@@ -94,3 +94,4 @@ def automate_states(states):
 
     while True:
         if stop_automation_flag:
+            print("Automation stopped.")

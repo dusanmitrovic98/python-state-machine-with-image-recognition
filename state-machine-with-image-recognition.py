@@ -89,3 +89,4 @@ def automate_states(states):
                 break
 
     global stop_automation_flag
+

@@ -149,3 +149,4 @@ def start_automation():
     automation_thread.start()
 
     return jsonify({"status": "success", "message": "Automation started."})
+

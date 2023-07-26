@@ -131,3 +131,4 @@ def automate_states(states):
             break
 
 @app.route("/", methods=["GET", "POST"])
+def index():

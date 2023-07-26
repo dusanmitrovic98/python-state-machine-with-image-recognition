@@ -150,3 +150,4 @@ def start_automation():
 
     return jsonify({"status": "success", "message": "Automation started."})
 
+@app.route("/stop")

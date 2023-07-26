@@ -138,3 +138,4 @@ def index():
     return INDEX_PAGE
 
 @app.route("/start")
+def start_automation():

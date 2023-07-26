@@ -153,3 +153,4 @@ def start_automation():
 @app.route("/stop")
 def stop_automation():
     global automation_thread, stop_automation_flag
+

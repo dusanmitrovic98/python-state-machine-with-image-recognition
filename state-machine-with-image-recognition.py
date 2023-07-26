@@ -108,3 +108,4 @@ def automate_states(states):
         action = current_state["action"]
         duration = current_state["duration"]
         next_state_id = current_state["next_state"]
+

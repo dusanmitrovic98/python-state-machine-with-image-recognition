@@ -143,3 +143,4 @@ def start_automation():
 
     # Set stop_automation_flag to False before starting automation
     stop_automation_flag = False
+

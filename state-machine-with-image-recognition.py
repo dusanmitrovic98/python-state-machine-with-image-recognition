@@ -136,3 +136,4 @@ def index():
         return redirect(url_for("start_automation"))
     # return render_template("index.html")
     return INDEX_PAGE
+

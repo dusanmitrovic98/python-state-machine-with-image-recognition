@@ -121,3 +121,4 @@ def automate_states(states):
             time.sleep(1)
 
         if not stop_automation_flag:
+            find_and_click(image_path)

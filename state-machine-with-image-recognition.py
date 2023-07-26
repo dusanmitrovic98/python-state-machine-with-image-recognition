@@ -101,3 +101,4 @@ def automate_states(states):
         current_state = next((state for state in states if state["id"] == current_state_id), None)
 
         if current_state is None:
+            print(f"State with ID {current_state_id} not found.")

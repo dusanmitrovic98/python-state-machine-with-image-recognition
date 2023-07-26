@@ -115,3 +115,4 @@ def automate_states(states):
         for remaining_time in range(duration, 0, -1):
             if stop_automation_flag:
                 print("Automation stopped.")
+                break

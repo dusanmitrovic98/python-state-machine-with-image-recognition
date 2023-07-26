@@ -126,3 +126,4 @@ def automate_states(states):
         # Move to the next state based on the next_state ID
         current_state_id = next_state_id
 
+        if current_state_id == -1:

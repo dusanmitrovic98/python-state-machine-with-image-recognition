@@ -116,3 +116,4 @@ def automate_states(states):
             if stop_automation_flag:
                 print("Automation stopped.")
                 break
+

@@ -137,3 +137,4 @@ def index():
     # return render_template("index.html")
     return INDEX_PAGE
 
+@app.route("/start")

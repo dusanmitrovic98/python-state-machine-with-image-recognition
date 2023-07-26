@@ -130,3 +130,4 @@ def automate_states(states):
             print("End state reached. Automation stopped.")
             break
 
+@app.route("/", methods=["GET", "POST"])

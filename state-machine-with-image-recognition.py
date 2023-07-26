@@ -132,3 +132,4 @@ def automate_states(states):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    if request.method == "POST":

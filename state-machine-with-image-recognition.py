@@ -157,3 +157,4 @@ def stop_automation():
     if automation_thread and automation_thread.is_alive():
         stop_automation_flag = True
         automation_thread.join()  # Wait for the automation thread to finish
+

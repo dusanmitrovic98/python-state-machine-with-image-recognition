@@ -123,3 +123,4 @@ def automate_states(states):
         if not stop_automation_flag:
             find_and_click(image_path)
 
+        # Move to the next state based on the next_state ID

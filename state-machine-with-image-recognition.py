@@ -129,3 +129,4 @@ def automate_states(states):
         if current_state_id == -1:
             print("End state reached. Automation stopped.")
             break
+

@@ -88,3 +88,4 @@ def automate_states(states):
                 print("Automation stopped.")
                 break
 
+    global stop_automation_flag

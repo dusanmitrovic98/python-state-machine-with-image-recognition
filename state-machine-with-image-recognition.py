@@ -124,3 +124,4 @@ def automate_states(states):
             find_and_click(image_path)
 
         # Move to the next state based on the next_state ID
+        current_state_id = next_state_id

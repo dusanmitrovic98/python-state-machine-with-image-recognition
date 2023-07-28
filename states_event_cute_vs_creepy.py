@@ -9,6 +9,8 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 img_ecvc_01 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_01.jpg"))
 img_ecvc_02 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_02.jpg"))
 img_ecvc_03 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_03.jpg"))
+img_ecvc_04 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_04.jpg"))
+img_ecvc_05 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_05.jpg"))
 
 STATES = [
     State(

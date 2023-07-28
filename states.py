@@ -40,5 +40,6 @@ def set_pre_post_states(states):
         state.post_state.next_states.append(state.id)
     return states
 
-STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
-# STATES = merge_states([STATES_ACCOUNT_CREATION])
+# ! gold collection
+# STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
+# ! event cute vs creepy

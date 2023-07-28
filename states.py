@@ -35,8 +35,7 @@ def merge_states(list_of_states):
 def set_pre_post_states(states):
     for state in states:
         state.pre_state = GENERAL_PRE_STATE[0]
-        state.pre_state.next_states.append(state.id) # ! when retry image recognized return to the current state
-        state.post_state = GENERAL_POST_STATE[0]
+        state.pre_state.next_states.append(state.id)
         state.post_state.next_states.append(state.id)
     return states
 

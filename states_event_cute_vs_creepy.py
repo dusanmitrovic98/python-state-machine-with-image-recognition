@@ -20,17 +20,17 @@ STATES = [
     ),
     State(
         id=1,
-        image_paths=[img_ecvc_02],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[2]
+        image_paths=[img_ecvc_02, img_ecvc_01],
+        actions=[click] * 2,
+        durations=[FREQUENCY] * 2,
+        next_states=[2, 1]
     ),
     State(
         id=2,
         image_paths=[img_ecvc_03],
         actions=[click],
         durations=[FREQUENCY / 4],
-        next_states=[999]
+        next_states=[0]
     ),
     State( # ! end state should be removed
         id=999,

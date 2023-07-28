@@ -5,7 +5,7 @@ from states import STATES
 
 
 FREQUENCY = 1.0
-THRESHOLD = 0.7
+THRESHOLD = 0.5
 states = STATES
 
 app = Flask(__name__)

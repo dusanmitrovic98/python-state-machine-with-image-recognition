@@ -16,7 +16,7 @@ GENERAL_PRE_STATE = State(
     actions=[click],
     durations=[FREQUENCY],
     next_states=[]
-),
+)
 
 GENERAL_POST_STATE = State(
     id=1002,
@@ -24,7 +24,13 @@ GENERAL_POST_STATE = State(
     actions=["Hello World!"],
     durations=[FREQUENCY],
     next_states=[999]
-),
+)
+
+GENERAL_POST_STATE = State(id=1,
+                        image_paths=[img_ecvc_05],
+                        actions=[click],
+                        durations=[FREQUENCY],
+                        next_states=[2])
 
 def merge_states(list_of_states):
     if not list_of_states:

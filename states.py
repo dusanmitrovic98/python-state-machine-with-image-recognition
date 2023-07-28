@@ -1,6 +1,7 @@
 import os
 
 from states_account_creation import STATES as STATES_ACCOUNT_CREATION
+from states_event_cute_vs_creepy import STATES as STATES_EVENT_CUTE_VS_CREEPY
 from click_position import click
 from state import State
 
@@ -36,9 +37,11 @@ def set_pre_post_states(states):
     for state in states:
         state.pre_state = GENERAL_PRE_STATE[0]
         state.pre_state.next_states.append(state.id)
+        state.post_state = GENERAL_POST_STATE[0]
         state.post_state.next_states.append(state.id)
     return states
 
 # ! gold collection
 # STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
 # ! event cute vs creepy
+STATES = set_pre_post_states(merge_states([STATES_EVENT_CUTE_VS_CREEPY]))

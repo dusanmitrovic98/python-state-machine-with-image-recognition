@@ -30,7 +30,7 @@ STATES = [
         image_paths=[img_ecvc_03],
         actions=[click],
         durations=[FREQUENCY / 4],
-        next_states=[3]
+        next_states=[999]
     ),
     State( # ! end state should be removed
         id=999,

@@ -1,6 +1,6 @@
-import cv2
 import numpy as np
 import pyautogui
+import cv2
 
 from config import THRESHOLD
 from logger import log

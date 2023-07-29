@@ -1,6 +1,6 @@
 import os
 
-from config import img_tg_100
+from config import img_tg_100, img_tg_101
 from config import END_STATE_TRANSFER_GOLD, FREQUENCY
 from click_position import click
 from state import State
@@ -22,7 +22,7 @@ STATES = [
     ),
     State(
         id=102,
-        image_paths=[img_tg_100],
+        image_paths=[img_tg_101],
         actions=[click],
         durations=[FREQUENCY],
         next_states=[999]

@@ -1,5 +1,6 @@
 import pyautogui
 
+from config import MY_USERNAME
 from logger import log
 
 
@@ -9,4 +10,4 @@ def type_username(username):
 
 def type_username_01():
         pyautogui.typewrite(MY_USERNAME)
-        log("Typed random username bk20198.")
+        log(f"Typed username {MY_USERNAME}.")

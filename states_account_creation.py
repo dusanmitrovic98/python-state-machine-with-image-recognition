@@ -1,6 +1,6 @@
 import os
 
-from config import END_STATE_ACCOUNT_CREATION
+from config import END_STATE_ACCOUNT_CREATION, FREQUENCY, img_acc_01, img_acc_02, img_acc_03, img_acc_04, img_acc_05, img_acc_06, img_acc_07, img_wa_10
 from type_username import type_username
 from delete_input import delete_input
 from move_cursor import move_cursor

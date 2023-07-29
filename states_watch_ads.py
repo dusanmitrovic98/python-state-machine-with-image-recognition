@@ -1,4 +1,5 @@
 import os
+from config import FREQUENCY
 
 from delete_input import delete_input
 from move_cursor import move_cursor

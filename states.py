@@ -9,14 +9,14 @@ FREQUENCY = 1
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 img_1000 = os.path.join(os.path.join(current_directory, "state_images\\img_1000.jpg"))
-img_ecvc_05 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_05.jpg"))
+img_ecvc_06 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_06.jpg"))
 
 GENERAL_PRE_STATE = State(
     id=1001,
-    image_paths=[img_ecvc_05, img_1000],
+    image_paths=[img_ecvc_06, img_1000],
     actions=[click] * 2,
-    durations=[FREQUENCY] * 2,
-    next_states=[]
+    durations=[FREQUENCY / 4, FREQUENCY],
+    next_states=[0]
 )
 
 GENERAL_POST_STATE = State(
@@ -26,12 +26,6 @@ GENERAL_POST_STATE = State(
     durations=[FREQUENCY],
     next_states=[999]
 )
-
-GENERAL_PRE_STATE = State(id=1,
-                        image_paths=[img_ecvc_05],
-                        actions=[click],
-                        durations=[FREQUENCY],
-                        next_states=[2])
 
 def merge_states(list_of_states):
     if not list_of_states:

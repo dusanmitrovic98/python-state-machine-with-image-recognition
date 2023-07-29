@@ -8,5 +8,5 @@ def type_username(username):
         log("Typed random username.")
 
 def type_username_01():
-        pyautogui.typewrite("bk20198")
+        pyautogui.typewrite(MY_USERNAME)
         log("Typed random username bk20198.")

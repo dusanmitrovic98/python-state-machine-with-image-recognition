@@ -42,6 +42,13 @@ STATES = [
         durations=[FREQUENCY] * 4,
         next_states=[13] * 4
     ),
+    State(
+        id=99, # ! final state of watch ads
+        image_paths=[img_wa_13],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[14]
+    ),
     # State( # ! end state should be removed
     #     id=999,
     #     image_paths=[""],

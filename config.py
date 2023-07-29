@@ -10,6 +10,7 @@ PROCESS_ON_ENTER = True
 PROCESS_ON_EXIT = True
 
 END_STATE_ACCOUNT_CREATION = 10
+END_WATCH_ADS = 99
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 

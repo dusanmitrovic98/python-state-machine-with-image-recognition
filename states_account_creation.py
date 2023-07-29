@@ -7,17 +7,6 @@ from move_cursor import move_cursor
 from click_position import click
 from state import State
 
-FREQUENCY = 1
-
-current_directory = os.path.dirname(os.path.abspath(__file__))
-img_acc_01 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_01.jpg"))
-img_acc_02 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_02.jpg"))
-img_acc_03 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_03.jpg"))
-img_acc_04 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_04.jpg"))
-img_acc_05 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_05.jpg"))
-img_acc_06 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_06.jpg"))
-img_acc_07 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_07.jpg"))
-
 STATES = [
     State(
         id=0,
@@ -28,7 +17,7 @@ STATES = [
     ),
     State(
         id=1,
-        image_paths=[img_acc_02],
+        image_paths=[img_acc_02, img_wa_10],
         actions=[click],
         durations=[FREQUENCY],
         next_states=[2]

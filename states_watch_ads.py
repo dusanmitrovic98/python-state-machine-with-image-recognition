@@ -6,11 +6,6 @@ from click_position import click
 from state import State
 from type_username import type_username
 
-FREQUENCY = 1
-
-current_directory = os.path.dirname(os.path.abspath(__file__))
-img_wa_10 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_10.jpg"))
-
 STATES = [
     State(
         id=10,

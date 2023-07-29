@@ -43,7 +43,7 @@ def set_pre_post_states(states):
     for state in states:
         state.pre_states = GENERAL_PRE_STATES
         state.pre_states[0].next_states.append(state.id)
-        state.post_states = GENERAL_POST_STATES
+        # ! state.post_states = GENERAL_POST_STATES
         # ! state.post_states[0].append(state.id)
     return states
 

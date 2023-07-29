@@ -6,7 +6,7 @@ from config import THRESHOLD
 from logger import log
 
 def recognize_image(state):
-    try: 
+    try:
         state.on_enter()
         for index, image in enumerate(state.images):
             if image is None:

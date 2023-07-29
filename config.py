@@ -45,3 +45,4 @@ img_tg_107 = os.path.join(os.path.join(current_directory, "images\\transfer_gold
 img_tg_108 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_108.jpg"))
 img_tg_109 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_109.jpg"))
 img_tg_110 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_110.jpg"))
+img_tg_111 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_111.jpg"))

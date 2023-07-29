@@ -13,13 +13,13 @@ img_1000 = os.path.join(os.path.join(current_directory, "state_images\\img_1000.
 img_ecvc_06 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_06.jpg"))
 
 GENERAL_PRE_STATES = [
-    # State(
-    #     id=1001,
-    #     image_paths=[img_ecvc_06, img_1000],
-    #     actions=[click] * 2,
-    #     durations=[FREQUENCY / 4, FREQUENCY],
-    #     next_states=[0]
-    # ),
+    State(
+        id=1001,
+        image_paths=[img_1000],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[]
+    ),
 ]
 
 GENERAL_POST_STATES = [
@@ -42,9 +42,9 @@ def merge_states(list_of_states):
 def set_pre_post_states(states):
     for state in states:
         state.pre_states = GENERAL_PRE_STATES
-        state.pre_states.extend(state.pre_states)
+        state.pre_states[0].append(state.id)
         state.post_states = GENERAL_POST_STATES
-        state.post_states.extend(state.post_states)
+        # ! state.post_states[0].append(state.id)
     return states
 
 # ! account creation

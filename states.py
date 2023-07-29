@@ -5,7 +5,7 @@ from states_account_creation import STATES as STATES_ACCOUNT_CREATION
 from states_watch_ads import STATES as STATES_WATCH_ADS
 from click_position import click
 from state import State
-# from config import img_wa_17
+from config import img_acc_01
 
 FREQUENCY = 1
 
@@ -23,13 +23,13 @@ GENERAL_PRE_STATES = [
 ]
 
 GENERAL_POST_STATES = [
-    # State(
-    #     id=1002,
-    #     image_paths=[""],
-    #     actions=["Hello World!"],
-    #     durations=[FREQUENCY],
-    #     next_states=[999]
-    # ),
+    State(
+        id=1002,
+        image_paths=[img_acc_01],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[1]
+    ),
 ]
 
 def merge_states(list_of_states):

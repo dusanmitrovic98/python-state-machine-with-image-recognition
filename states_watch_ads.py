@@ -1,11 +1,8 @@
 import os
 from config import FREQUENCY
 
-from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14, img_wa_15, img_wa_16, img_wa_17
-from type_username import type_username
+from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_99
 from held_mouse_up import held_mouse_up
-from delete_input import delete_input
-from move_cursor import move_cursor
 from click_position import click
 from state import State
 

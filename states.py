@@ -5,7 +5,7 @@ from states_account_creation import STATES as STATES_ACCOUNT_CREATION
 from states_watch_ads import STATES as STATES_WATCH_ADS
 from click_position import click
 from state import State
-from config import img_acc_01
+from config import img_acc_01, img_wa_14
 
 FREQUENCY = 1
 
@@ -15,10 +15,10 @@ img_1000 = os.path.join(os.path.join(current_directory, "images\\img_1000.jpg"))
 GENERAL_PRE_STATES = [
     State(
         id=1001,
-        image_paths=[img_1000],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[]
+        image_paths=[img_wa_14, img_1000],
+        actions=[click] * 2,
+        durations=[FREQUENCY] * 2,
+        next_states=[13]
     ),
 ]
 

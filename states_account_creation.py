@@ -18,9 +18,9 @@ STATES = [
     State(
         id=1,
         image_paths=[img_acc_02, img_wa_10],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[2]
+        actions=[click] * 2,
+        durations=[FREQUENCY] * 2,
+        next_states=[2, 10]
     ), 
     State(
         id=2,

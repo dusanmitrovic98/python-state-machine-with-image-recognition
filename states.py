@@ -1,7 +1,8 @@
 import os
 
-from states_account_creation import STATES as STATES_ACCOUNT_CREATION
 from states_event_cute_vs_creepy import STATES as STATES_EVENT_CUTE_VS_CREEPY
+from states_account_creation import STATES as STATES_ACCOUNT_CREATION
+from states_watch_ads import STATES as STATES_WATCH_ADS
 from click_position import click
 from state import State
 
@@ -47,8 +48,8 @@ def set_pre_post_states(states):
     return states
 
 # ! account creation
-STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
+# STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
 # ! event cute vs creepy
 # STATES = set_pre_post_states(merge_states([STATES_EVENT_CUTE_VS_CREEPY]))
 # ! watch ads
-# STATES = set_pre_post_states(merge_states([STATES_EVENT_CUTE_VS_CREEPY]))
+STATES = set_pre_post_states(merge_states([STATES_WATCH_ADS]))

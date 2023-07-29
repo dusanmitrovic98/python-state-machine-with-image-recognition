@@ -77,7 +77,7 @@ class State:
                 elif self.actions[index] is type_username:
                     self.actions[index]((generate_random_username()))
                 elif self.actions[index] is type_username_01:
-                    self.actions[index](type_username_01)
+                    self.actions[index]()
                 elif self.actions[index] is move_cursor:
                     self.actions[index]((x, y))
                 elif self.actions[index] is delete_input:

@@ -21,13 +21,15 @@ GENERAL_PRE_STATES = [
     ),
 ]
 
-GENERAL_POST_STATE = State(
-    id=1002,
-    image_paths=[""],
-    actions=["Hello World!"],
-    durations=[FREQUENCY],
-    next_states=[999]
-)
+GENERAL_POST_STATES = [
+    State(
+        id=1002,
+        image_paths=[""],
+        actions=["Hello World!"],
+        durations=[FREQUENCY],
+        next_states=[999]
+    ),
+]
 
 def merge_states(list_of_states):
     if not list_of_states:

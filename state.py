@@ -45,8 +45,8 @@ class State:
             time.sleep(1.0 / frequency)
             return self.id
 
-    def process_with_pre_and_post_state(self, frequency = 1.0):
-        on_enter_result_id = self.on_enter(frequency)  
+    def process_with_pre_and_post_state(self, frequency=1.0):
+        on_enter_result_id = self.on_enter(frequency)
         if on_enter_result_id:
             return on_enter_result_id
         result_id = self.process_with_post_state(frequency)

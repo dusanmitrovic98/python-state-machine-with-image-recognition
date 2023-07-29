@@ -1,10 +1,11 @@
 import os
 
+from config import END_STATE_ACCOUNT_CREATION
+from type_username import type_username
 from delete_input import delete_input
 from move_cursor import move_cursor
 from click_position import click
 from state import State
-from type_username import type_username
 
 FREQUENCY = 1
 
@@ -66,7 +67,7 @@ STATES = [
         image_paths=[img_acc_03, img_acc_06], 
         actions=[click, click],
         durations=[FREQUENCY] * 2,
-        next_states=[6, 999]
+        next_states=[6, END_STATE_ACCOUNT_CREATION]
     ), 
     State(
         id=7,

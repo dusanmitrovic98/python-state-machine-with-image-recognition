@@ -39,7 +39,7 @@ STATES = [
         next_states=[14]
     ),
     State(
-        id=13, # ! x1 button clicked
+        id=14, # ! x1 button clicked
         image_paths=[img_wa_14],
         actions=[click],
         durations=[FREQUENCY],

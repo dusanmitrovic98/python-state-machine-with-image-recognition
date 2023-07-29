@@ -80,10 +80,10 @@ STATES = [
     ),
     State(
         id=110,
-        image_paths=[img_tg_107],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[111]
+        image_paths=[img_tg_107, img_tg_108],
+        actions=[click] * 2,
+        durations=[FREQUENCY] * 2,
+        next_states=[111, 112]
     ),
     State(
         id=111,

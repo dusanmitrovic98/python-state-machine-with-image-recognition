@@ -29,12 +29,11 @@ class State:
                 return result_id
         return None
 
-    def on_exit(self, frequency = 1.0):
-        if not self.post_state:
-            return None 
-        result_id = self.post_state.process(frequency)
-        if result_id:
-            return result_id
+    def on_exit(self, frequency=1.0):
+        for post_state in self.post_states:
+            result_id = post_state.process(frequency)
+            if result_id:
+                return result_id
         return None
     
     def process(self, frequency = 1.0):

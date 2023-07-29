@@ -14,7 +14,14 @@ STATES = [
         image_paths=[img_wa_10],
         actions=[click],
         durations=[FREQUENCY],
-        next_states=[1]
+        next_states=[11]
+    ),
+    State(
+        id=10,
+        image_paths=[img_wa_10],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[11]
     ),
     # State( # ! end state should be removed
     #     id=999,

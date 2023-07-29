@@ -21,3 +21,5 @@ img_acc_06 = os.path.join(os.path.join(current_directory, "images\\create_accoun
 img_acc_07 = os.path.join(os.path.join(current_directory, "images\\create_account\\img_acc_07.jpg"))
 
 img_wa_10 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_10.jpg"))
+img_wa_11 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_11.jpg"))
+img_wa_12 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_12.jpg"))

@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
-from state_machine import StateMachine
 from config import FREQUENCY
+from state_machine import StateMachine
 from states import STATES
 
 states = STATES

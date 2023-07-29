@@ -65,11 +65,11 @@ STATES = [
         durations=[FREQUENCY] * 2,
         next_states=[4] * 2
     ), 
-    # State( # ! end state should be removed
-    #     id=999,
-    #     image_paths=[""],
-    #     actions=["State machine stopped."],
-    #     durations=[0],
-    #     next_states=[-1]
-    # )
+    State( # ! end state should be removed
+        id=999,
+        image_paths=[""],
+        actions=["State machine stopped."],
+        durations=[0],
+        next_states=[-1]
+    )
 ]

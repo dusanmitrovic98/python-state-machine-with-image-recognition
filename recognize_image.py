@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import pyautogui
 
+from config import THRESHOLD
 from logger import log
 
 def recognize_image(state):

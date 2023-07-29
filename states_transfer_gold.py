@@ -1,6 +1,6 @@
 import os
 
-from config import img_tg_100, img_tg_101, img_tg_102, img_tg_103
+from config import img_tg_100, img_tg_101, img_tg_102, img_tg_103, img_tg_104, img_tg_105, img_tg_106, img_tg_107, img_tg_108, img_tg_109, img_tg_110
 from config import END_STATE_TRANSFER_GOLD, FREQUENCY
 from type_username import type_username_01
 from move_cursor import move_cursor
@@ -54,6 +54,55 @@ STATES = [
         id=106,
         image_paths=[img_tg_103],
         actions=[type_username_01],
+        durations=[FREQUENCY],
+        next_states=[107]
+    ),
+    State(
+        id=107,
+        image_paths=[img_tg_104],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[108]
+    ),
+    State(
+        id=108,
+        image_paths=[img_tg_105],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[109]
+    ),
+    State(
+        id=109,
+        image_paths=[img_tg_106],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[110]
+    ),
+    State(
+        id=110,
+        image_paths=[img_tg_107],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[111]
+    ),
+    State(
+        id=111,
+        image_paths=[img_tg_108],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[112]
+    ),
+    State(
+        id=112,
+        image_paths=[img_tg_109],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[113]
+    ),
+    State(
+        id=112,
+        image_paths=[img_tg_110],
+        actions=[click],
         durations=[FREQUENCY],
         next_states=[999]
     ),

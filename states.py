@@ -40,10 +40,10 @@ def merge_states(list_of_states):
 
 def set_pre_post_states(states):
     for state in states:
-        state.pre_state = GENERAL_PRE_STATE
-        state.pre_state.next_states.append(state.id)
-        state.post_state = GENERAL_POST_STATE
-        state.post_state.next_states.append(state.id)
+        state.pre_states = GENERAL_PRE_STATES
+        state.pre_states.extend(state.pre_states)
+        state.post_states = GENERAL_POST_STATES
+        state.post_states.extend(state.post_states)
     return states
 
 # ! gold collection

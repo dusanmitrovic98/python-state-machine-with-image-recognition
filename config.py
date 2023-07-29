@@ -25,3 +25,4 @@ img_wa_11 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img
 img_wa_12 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_12.jpg"))
 img_wa_13 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_13.jpg"))
 img_wa_14 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_14.jpg"))
+img_wa_15 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_15.jpg"))

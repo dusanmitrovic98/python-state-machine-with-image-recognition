@@ -1,7 +1,7 @@
 import os
 from config import FREQUENCY
 
-from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14
+from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14, img_wa_15
 from type_username import type_username
 from held_mouse_up import held_mouse_up
 from delete_input import delete_input
@@ -40,10 +40,10 @@ STATES = [
     ),
     State(
         id=14, # ! x1 button clicked
-        image_paths=[img_wa_14],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[13]
+        image_paths=[img_wa_14, img_wa_15],
+        actions=[click] * 2,
+        durations=[FREQUENCY] * 2,
+        next_states=[13, 13]
     ),
     # State( # ! end state should be removed
     #     id=999,

@@ -1,7 +1,7 @@
 import os
 from config import FREQUENCY
 
-from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13
+from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14
 from type_username import type_username
 from held_mouse_up import held_mouse_up
 from delete_input import delete_input

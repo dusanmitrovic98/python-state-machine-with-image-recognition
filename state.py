@@ -18,8 +18,8 @@ class State:
         self.actions: list = actions if actions else []
         self.durations: list = durations if durations else []
         self.next_states: list = next_states if next_states else []
-        self.pre_state: State = None
-        self.post_state: State = None
+        self.pre_states: list[State] = []
+        self.post_states: list[State] = []
         self.images = [cv2.imread(path) if path else None for path in self.image_paths] 
 
     def on_enter(self, frequency = 1.0):

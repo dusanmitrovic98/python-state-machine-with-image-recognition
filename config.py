@@ -1,5 +1,6 @@
 import os
 
+MY_USERNAME = "bk20198"
 
 FREQUENCY = 1
 THRESHOLD = 0.8

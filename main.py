@@ -1,11 +1,9 @@
 from flask import Flask, jsonify
 
 from state_machine import StateMachine
+from config import FREQUENCY
 from states import STATES
 
-
-FREQUENCY = 1.0
-THRESHOLD = 0.9
 states = STATES
 
 app = Flask(__name__)

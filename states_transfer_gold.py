@@ -95,10 +95,10 @@ STATES = [
     ),
     State(
         id=112,
-        image_paths=[img_tg_111, img_tg_109],
+        image_paths=[img_tg_109, img_tg_111],
         actions=[click] * 2,
         durations=[FREQUENCY] * 2,
-        next_states=[999, 113]
+        next_states=[113, 999]
     ),
     State(
         id=113,

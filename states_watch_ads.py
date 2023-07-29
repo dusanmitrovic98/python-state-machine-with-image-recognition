@@ -1,6 +1,7 @@
 import os
 from config import FREQUENCY
 
+from config import img_wa_10
 from delete_input import delete_input
 from move_cursor import move_cursor
 from click_position import click

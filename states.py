@@ -51,5 +51,5 @@ def set_pre_post_states(states):
 # STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
 # ! event cute vs creepy
 # STATES = set_pre_post_states(merge_states([STATES_EVENT_CUTE_VS_CREEPY]))
-# ! watch ads
-STATES = set_pre_post_states(merge_states([STATES_WATCH_ADS]))
+# ! gold collection
+STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION, STATES_WATCH_ADS]))

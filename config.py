@@ -2,6 +2,7 @@ import os
 
 
 FREQUENCY = 1
+THRESHOLD = 0.8
 
 NUM_BACKSPACES_PRESSES = 13
 

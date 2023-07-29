@@ -20,7 +20,7 @@ GENERAL_PRE_STATES = [
         image_paths=[img_wa_14, img_1000, img_1001],
         actions=[click] * 3,
         durations=[FREQUENCY] * 3,
-        next_states=[13]
+        next_states=[110] # ! 13
     ),
 ]
 

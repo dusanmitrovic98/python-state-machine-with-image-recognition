@@ -95,17 +95,17 @@ STATES = [
     ),
     State(
         id=112,
-        image_paths=[img_tg_109],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[113]
+        image_paths=[img_tg_111, img_tg_109],
+        actions=[click] * 2,
+        durations=[FREQUENCY] * 2,
+        next_states=[999, 113]
     ),
     State(
-        id=112,
-        image_paths=[img_tg_111, img_tg_110],
-        actions=[click, held_mouse_left],
-        durations=[FREQUENCY] * 2,
-        next_states=[999, 109]
+        id=113,
+        image_paths=[img_tg_110],
+        actions=[held_mouse_left],
+        durations=[FREQUENCY],
+        next_states=[109]
     ),
     # State( # ! end state should be removed
     #     id=999,

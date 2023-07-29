@@ -5,6 +5,7 @@ from states_account_creation import STATES as STATES_ACCOUNT_CREATION
 from states_watch_ads import STATES as STATES_WATCH_ADS
 from click_position import click
 from state import State
+# from config import img_wa_17
 
 FREQUENCY = 1
 

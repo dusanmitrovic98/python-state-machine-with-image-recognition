@@ -22,12 +22,11 @@ class State:
         self.post_states: list[State] = []
         self.images = [cv2.imread(path) if path else None for path in self.image_paths] 
 
-    def on_enter(self, frequency = 1.0):
-        if not self.pre_state:
-            return None
-        result_id = self.pre_state.process(frequency)
-        if result_id:
-            return result_id
+    def on_enter(self, frequency=1.0):
+        for pre_state in self.pre_states:
+            result_id = pre_state.process(frequency)
+            if result_id:
+                return result_id
         return None
 
     def on_exit(self, frequency = 1.0):

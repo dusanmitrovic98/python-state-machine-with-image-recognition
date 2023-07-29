@@ -9,8 +9,7 @@ from state import State
 FREQUENCY = 1
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
-img_1000 = os.path.join(os.path.join(current_directory, "state_images\\img_1000.jpg"))
-img_ecvc_06 = os.path.join(os.path.join(current_directory, "images\\event_cute_vs_creepy\\img_ecvc_06.jpg"))
+img_1000 = os.path.join(os.path.join(current_directory, "images\\img_1000.jpg"))
 
 GENERAL_PRE_STATES = [
     State(

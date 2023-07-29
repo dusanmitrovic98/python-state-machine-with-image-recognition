@@ -29,7 +29,7 @@ class State:
             if result_id:
                 return result_id
         return None
-
+ 
     def on_exit(self, frequency=1.0):
         if not PROCESS_ON_EXIT:
             return None

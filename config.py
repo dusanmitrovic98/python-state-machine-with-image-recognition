@@ -1,7 +1,7 @@
 import os
 
 
-FREQUENCY = 1
+FREQUENCY = 0.5
 THRESHOLD = 0.8
 
 NUM_BACKSPACES_PRESSES = 13
@@ -28,3 +28,4 @@ img_wa_13 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img
 img_wa_14 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_14.jpg"))
 img_wa_15 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_15.jpg"))
 img_wa_16 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_16.jpg"))
+img_wa_17 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_17.jpg"))

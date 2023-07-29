@@ -3,8 +3,8 @@ import cv2
 
 from config import NUM_BACKSPACES_PRESSES, PROCESS_ON_ENTER, PROCESS_ON_EXIT
 from generate_random_username import generate_random_username
+from type_username import type_username, type_username_01
 from held_mouse_up import held_mouse_up
-from type_username import type_username
 from delete_input import delete_input
 from move_cursor import move_cursor
 from click_position import click
@@ -76,6 +76,8 @@ class State:
                     self.actions[index]((self.images[index], x, y))
                 elif self.actions[index] is type_username:
                     self.actions[index]((generate_random_username()))
+                elif self.actions[index] is type_username_01:
+                    self.actions[index](type_username_01)
                 elif self.actions[index] is move_cursor:
                     self.actions[index]((x, y))
                 elif self.actions[index] is delete_input:

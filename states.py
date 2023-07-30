@@ -50,12 +50,12 @@ def set_pre_post_states(states):
         # ! state.post_states[0].append(state.id)
         if state.id is 13:
             state.pre_states.append(State(
-        id=14, # ! x button clicked
-            image_paths=[img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_99],
-            actions=[click] * 5,
-            durations=[FREQUENCY] * 5,
-            next_states=[13] * 4 + [END_STATE_WATCH_ADS]
-        ))
+                                        id=14, # ! x button clicked
+                                            image_paths=[img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_99],
+                                            actions=[click] * 5,
+                                            durations=[FREQUENCY] * 5,
+                                            next_states=[13] * 4 + [END_STATE_WATCH_ADS]
+                                        ))
     return states
 
 # ! account creation

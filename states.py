@@ -6,7 +6,7 @@ from states_transfer_gold import STATES as STATES_TRANSFER_GOLD
 from states_watch_ads import STATES as STATES_WATCH_ADS
 from click_position import click
 from state import State
-from config import img_acc_01, img_wa_14
+from config import END_STATE_WATCH_ADS, img_acc_01, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_99
 
 FREQUENCY = 1
 
@@ -17,10 +17,10 @@ img_1001 = os.path.join(os.path.join(current_directory, "images\\img_1001.jpg"))
 GENERAL_PRE_STATES = [
     State(
         id=1001,
-        image_paths=[img_wa_14, img_1000, img_1001],
-        actions=[click] * 3,
-        durations=[FREQUENCY] * 3,
-        next_states=[13]
+        image_paths=[img_acc_01, img_wa_14, img_1000, img_1001], # ! if game crashes and it does not recognize game icon remove and fix
+        actions=[click] * 4,
+        durations=[FREQUENCY] * 4,
+        next_states=[1, 13]
     ),
 ]
 
@@ -48,6 +48,14 @@ def set_pre_post_states(states):
         state.pre_states[0].next_states.append(state.id)
         # ! state.post_states = GENERAL_POST_STATES
         # ! state.post_states[0].append(state.id)
+        if state.id is 13:
+            state.pre_states.append(State(
+        id=14, # ! x button clicked
+            image_paths=[img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_99],
+            actions=[click] * 5,
+            durations=[FREQUENCY] * 5,
+            next_states=[13] * 4 + [END_STATE_WATCH_ADS]
+        ))
     return states
 
 # ! account creation

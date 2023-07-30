@@ -1,6 +1,7 @@
 from typing import List
 import threading
 
+from config import START_STATE
 from state import State
 from logger import log
 
@@ -35,7 +36,7 @@ class StateMachine:
                     next_state_id = self.current_state.process(self.frequency)
                     self.transition_to_next_state(next_state_id)
                 else:
-                    if 0 in self.states:
+                    if START_STATE in self.states:
                         self.current_state = self.states[0]
                     else:
                         self.is_running = False

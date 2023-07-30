@@ -2,7 +2,7 @@ import os
 
 MY_USERNAME = "bk20198"
 
-FREQUENCY = 0.5
+FREQUENCY = 1
 THRESHOLD = 0.8
 
 NUM_BACKSPACES_PRESSES = 13
@@ -10,6 +10,7 @@ NUM_BACKSPACES_PRESSES = 13
 PROCESS_ON_ENTER = True
 PROCESS_ON_EXIT = True
 
+START_STATE = 1
 END_STATE_ACCOUNT_CREATION = 10
 END_STATE_WATCH_ADS = 100
 END_STATE_TRANSFER_GOLD = 200
@@ -32,6 +33,7 @@ img_wa_14 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img
 img_wa_15 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_15.jpg"))
 img_wa_16 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_16.jpg"))
 img_wa_17 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_17.jpg"))
+img_wa_18 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_18.jpg"))
 img_wa_99 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_99.jpg"))
 
 img_tg_100 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_100.jpg"))

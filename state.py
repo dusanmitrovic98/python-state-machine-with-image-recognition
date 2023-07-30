@@ -94,5 +94,5 @@ class State:
             return (False, -1)
         return recognize_image(self)
 
-    def __str__(self, index):
-        return f"State ID: {self.id}, Action: {self.action[index]}, Duration: {self.duration}, Next State: {self.next_state}"
+    def __str__(self):
+        return f"State ID: {self.id}, Action: {self.actions}, Duration: {self.durations}, Next State: {self.next_states}, Pre states: {self.pre_states}, Post states: {self.post_states}"

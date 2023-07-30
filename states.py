@@ -26,7 +26,7 @@ GENERAL_PRE_STATES = [
 
 GENERAL_POST_STATES = [
     State(
-        id=1002,
+        id=1002, 
         image_paths=[img_acc_01],
         actions=[click],
         durations=[FREQUENCY],
@@ -39,7 +39,7 @@ def merge_states(list_of_states):
         return []
     if len(list_of_states) < 2:
         return list_of_states[0]
-    return list_of_states[0] + merge_states(list_of_states[1:])
+    return list_of_states[0] + merge_states(list_of_states[1:])  
 
 def set_pre_post_states(states):
     for state in states:

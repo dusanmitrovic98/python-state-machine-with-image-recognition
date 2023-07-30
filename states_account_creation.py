@@ -8,13 +8,13 @@ from click_position import click
 from state import State
 
 STATES = [
-    State(
-        id=0,
-        image_paths=[img_acc_01],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[1]
-    ),
+    # State(
+    #     id=0,
+    #     image_paths=[img_acc_01],
+    #     actions=[click],
+    #     durations=[FREQUENCY],
+    #     next_states=[1]
+    # ),
     State(
         id=1,
         image_paths=[img_acc_02, img_wa_10],

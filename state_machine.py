@@ -37,6 +37,6 @@ class StateMachine:
                     self.transition_to_next_state(next_state_id)
                 else:
                     if START_STATE in self.states:
-                        self.current_state = self.states[0]
+                        self.current_state = self.states[1]
                     else:
                         self.is_running = False

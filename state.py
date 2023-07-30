@@ -5,6 +5,7 @@ from config import NUM_BACKSPACES_PRESSES, PROCESS_ON_ENTER, PROCESS_ON_EXIT
 from generate_random_username import generate_random_username
 from type_username import type_username, type_username_01
 from held_mouse_left import held_mouse_left
+from held_mouse_down import held_mouse_down
 from held_mouse_up import held_mouse_up
 from delete_input import delete_input
 from move_cursor import move_cursor
@@ -74,6 +75,8 @@ class State:
                 if self.actions[index] is click:
                     self.actions[index]((self.images[index], x, y))
                 elif self.actions[index] is held_mouse_up:
+                    self.actions[index]((self.images[index], x, y))
+                elif self.actions[index] is held_mouse_down:
                     self.actions[index]((self.images[index], x, y))
                 elif self.actions[index] is held_mouse_left:
                     self.actions[index]((self.images[index], x, y))

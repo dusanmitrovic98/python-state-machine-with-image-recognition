@@ -1,10 +1,10 @@
 import os
 
 from config import img_tg_100, img_tg_101, img_tg_102, img_tg_103, img_tg_104, img_tg_105, img_tg_106, img_tg_107, img_tg_108, img_tg_109, img_tg_110, img_tg_111, img_tg_112
+from move_cursor_left_without_clicking import move_cursor_left_without_clicking
 from config import END_STATE_TRANSFER_GOLD, FREQUENCY
 from held_mouse_left import held_mouse_left
 from type_username import type_username_01
-from move_cursor import move_cursor
 from click_position import click
 from state import State
 
@@ -19,7 +19,7 @@ STATES = [
     State(
         id=101,
         image_paths=[img_tg_101],
-        actions=[move_cursor],
+        actions=[move_cursor_left_without_clicking],
         durations=[FREQUENCY],
         next_states=[102]
     ),

@@ -2,6 +2,7 @@ import time
 import cv2
 
 from config import FREQUENCY, NUM_BACKSPACES_PRESSES, PROCESS_ON_ENTER, PROCESS_ON_EXIT, TIMEOUT, timeout_counter
+from move_cursor_left_without_clicking import move_cursor_left_without_clicking
 from generate_random_username import generate_random_username
 from type_username import type_username, type_username_01
 from held_mouse_left import held_mouse_left
@@ -93,6 +94,8 @@ class State:
                 elif self.actions[index] is type_username_01:
                     self.actions[index]()
                 elif self.actions[index] is move_cursor:
+                    self.actions[index]((x, y))
+                elif self.actions[index] is move_cursor_left_without_clicking:
                     self.actions[index]((x, y))
                 elif self.actions[index] is delete_input:
                     self.actions[index](NUM_BACKSPACES_PRESSES)

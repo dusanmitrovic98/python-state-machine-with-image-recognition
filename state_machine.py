@@ -1,7 +1,7 @@
 from typing import List
 import threading
 
-from config import START_STATE, TIMEOUT_COUNTER
+from config import START_STATE
 from state import State
 from logger import log
 
@@ -33,7 +33,7 @@ class StateMachine:
                 if self.current_state:
                     log(f"New state is being processed:  {self.current_state.id}") 
                     # next_state_id = self.current_state.process_with_pre_and_post_state(self.frequency)
-                    next_state_id = self.current_state.process_with_pre_and_post_state(TIMEOUT_COUNTER)
+                    next_state_id = self.current_state.process_with_pre_and_post_state()
                     self.transition_to_next_state(next_state_id)
                 else:
                     if START_STATE in self.states:

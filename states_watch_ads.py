@@ -1,6 +1,6 @@
 import os
 
-from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_18, img_wa_19, img_wa_20, img_wa_21, img_wa_22, img_wa_23, img_wa_99, img_1100, img_1101
+from config import img_wa_10, img_wa_11, img_wa_12, img_wa_13, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_18, img_wa_19, img_wa_20, img_wa_21, img_wa_22, img_wa_23, img_wa_24, img_wa_99, img_1100, img_1101
 from config import END_STATE_WATCH_ADS, FREQUENCY
 from held_mouse_left import held_mouse_left
 from held_mouse_up import held_mouse_up
@@ -41,13 +41,25 @@ STATES = [
         image_paths=[img_wa_19, img_wa_20, img_wa_21, img_wa_18, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_22, img_wa_99],
         actions=[click] * 10,
         durations=[FREQUENCY] * 10,
-        next_states=[14] + [13] * 7 + [15] + [END_STATE_WATCH_ADS]
+        next_states=[14] + [13] * 2 + [16] + [13] * 4 + [15] + [END_STATE_WATCH_ADS]
     ), State(
         id=15, # ! watch ads button clicked
         image_paths=[img_wa_23],
         actions=[click],
         durations=[FREQUENCY],
         next_states=[13]
+    ),  State(
+        id=16, # ! ok button
+        image_paths=[img_wa_24],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[13]
+    ),  State(
+        id=17, # ! ok button
+        image_paths=[img_wa_24],
+        actions=[click],
+        durations=[FREQUENCY],
+        next_states=[END_STATE_WATCH_ADS]
     ), State(
         id=1100, # ! timeout regeneration
         image_paths=[img_1100],

@@ -43,6 +43,9 @@ class State:
     
     def process(self):
         global timeout_counter
+        if timeout_counter > TIMEOUT: 
+                timeout_counter = FREQUENCY
+                return 1100
         recognized, index = self.is_image_recognized() or (False, -1)
         if recognized:
             time.sleep(self.durations[index])
@@ -53,9 +56,6 @@ class State:
             time.sleep(1.0 / FREQUENCY)
             timeout_counter += FREQUENCY
             print(f"Timeout: {timeout_counter}")
-            if timeout_counter > TIMEOUT: 
-                timeout_counter = FREQUENCY
-                return 1100
             return self.id
 
     def process_with_pre_and_post_state(self):

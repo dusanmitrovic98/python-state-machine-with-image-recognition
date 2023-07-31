@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
-from config import FREQUENCY
 from state_machine import StateMachine
+from config import FREQUENCY
 from states import STATES
 
 states = STATES
@@ -11,12 +11,11 @@ app = Flask(__name__)
 @app.route('/start')
 def start_state_machine():
     state_machine.start()
- 
 
 @app.route('/stop')
 def stop_state_machine():
     state_machine.stop()
-    return jsonify({"status": "State machine stopped."})
+    return jsonify({"status": "State machine stopped."}) 
 
 @app.route('/current_state')
 def get_current_state():

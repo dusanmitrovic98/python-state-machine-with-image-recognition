@@ -4,7 +4,7 @@ MY_USERNAME = "bk20198"
 
 FREQUENCY = 0.5
 THRESHOLD = 0.8
-TIMEOUT = FREQUENCY * 100
+TIMEOUT = FREQUENCY * 80
 TIMEOUT_REGENERATION_STATE = 1100
 timeout_counter = FREQUENCY
 
@@ -42,6 +42,7 @@ img_wa_20 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img
 img_wa_21 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_21.jpg"))
 img_wa_22 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_22.jpg"))
 img_wa_23 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_23.jpg"))
+img_wa_24 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_24.jpg"))
 img_wa_99 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_99.jpg"))
 
 img_tg_100 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_100.jpg"))

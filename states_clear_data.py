@@ -19,7 +19,14 @@ STATES = [
         image_paths=[img_cd_201],
         actions=[held_mouse_down],
         durations=[FREQUENCY],
-        next_states=[999]
+        next_states=[202]
+    ),
+    State(
+        id=201,
+        image_paths=[img_cd_201],
+        actions=[held_mouse_down],
+        durations=[FREQUENCY],
+        next_states=[202]
     )
     # State( # ! end state should be removed
     #     id=999,

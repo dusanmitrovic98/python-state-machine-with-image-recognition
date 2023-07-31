@@ -62,6 +62,8 @@ def set_pre_post_states(states):
                                         durations=[FREQUENCY],
                                         next_states=[11]
                                     ))
+        if state.id == 200:
+            state.pre_states = []
     return states
 
 # ! account creation

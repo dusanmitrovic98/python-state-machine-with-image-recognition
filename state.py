@@ -48,11 +48,11 @@ class State:
             time.sleep(self.durations[index])
             timeout_counter = FREQUENCY
             print(f"Timeout: {timeout_counter}")
-            print(f"Timeout: {timeout_counter}")
             return self.next_states[index]
         else:
             time.sleep(1.0 / FREQUENCY)
             timeout_counter += FREQUENCY
+            print(f"Timeout: {timeout_counter}")
             if timeout_counter > TIMEOUT: 
                 timeout_counter = FREQUENCY
                 return 1100

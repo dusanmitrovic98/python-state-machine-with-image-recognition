@@ -33,7 +33,7 @@ class StateMachine:
                 if self.current_state:
                     log(f"New state is being processed:  {self.current_state.id}") 
                     # next_state_id = self.current_state.process_with_pre_and_post_state(self.frequency)
-                    next_state_id = self.current_state.process()
+                    next_state_id = self.current_state.process_with_pre_and_post_state()
                     self.transition_to_next_state(next_state_id)
                 else:
                     if START_STATE in self.states:

@@ -25,7 +25,7 @@ class State:
 
     def on_enter(self):
         if not PROCESS_ON_ENTER:
-            return None
+            return self.id
         for pre_state in self.pre_states:
             result_id = pre_state.process()
             if result_id:
@@ -34,12 +34,12 @@ class State:
  
     def on_exit(self):
         if not PROCESS_ON_EXIT:
-            return None
+            return self.id
         for post_state in self.post_states:
             result_id = post_state.process()
             if result_id:
                 return result_id
-        return None
+        return self.id
     
     def process(self):
         global timeout_counter
@@ -56,7 +56,7 @@ class State:
             time.sleep(1.0 / FREQUENCY)
             timeout_counter += FREQUENCY
             print(f"Timeout: {timeout_counter}")
-            return self.id
+            return None
 
     def process_with_pre_and_post_state(self):
         on_enter_result_id = self.on_enter()
@@ -65,7 +65,7 @@ class State:
         result_id = self.process_with_post_state()
         if result_id:
             return result_id
-        return None
+        return self.id
     
     def process_with_post_state(self):
         result_id = self.process()
@@ -74,7 +74,7 @@ class State:
         on_exit_result_id = self.on_exit()
         if on_exit_result_id:
             return on_exit_result_id
-        return None
+        return self.id
 
     def execute_action(self, max_loc, index):
         x, y = max_loc

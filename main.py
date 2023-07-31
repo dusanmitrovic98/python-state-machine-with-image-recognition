@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/start')
 def start_state_machine():
     state_machine.start()
-    return jsonify({"status": "State machine started."})
+ 
 
 @app.route('/stop')
 def stop_state_machine():

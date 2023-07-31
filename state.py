@@ -1,7 +1,7 @@
 import time
 import cv2
 
-from config import NUM_BACKSPACES_PRESSES, PROCESS_ON_ENTER, PROCESS_ON_EXIT
+from config import FREQUENCY, NUM_BACKSPACES_PRESSES, PROCESS_ON_ENTER, PROCESS_ON_EXIT, TIMEOUT
 from generate_random_username import generate_random_username
 from type_username import type_username, type_username_01
 from held_mouse_left import held_mouse_left
@@ -23,47 +23,52 @@ class State:
         self.post_states: list[State] = []
         self.images = [cv2.imread(path) if path else None for path in self.image_paths] 
 
-    def on_enter(self, frequency=1.0):
+    def on_enter(self, timeout_counter):
         if not PROCESS_ON_ENTER:
             return None
         for pre_state in self.pre_states:
-            result_id = pre_state.process(frequency)
+            result_id = pre_state.process(FREQUENCY, timeout_counter)
             if result_id:
                 return result_id
         return None
  
-    def on_exit(self, frequency=1.0):
+    def on_exit(self, timeout_counter):
         if not PROCESS_ON_EXIT:
             return None
         for post_state in self.post_states:
-            result_id = post_state.process(frequency)
+            result_id = post_state.process(FREQUENCY, timeout_counter)
             if result_id:
                 return result_id
         return None
     
-    def process(self, frequency = 1.0):
+    def process(self, timeout_counter):
         recognized, index = self.is_image_recognized() or (False, -1)
         if recognized:
             time.sleep(self.durations[index])
+            timeout_counter = FREQUENCY
             return self.next_states[index]
         else:
-            time.sleep(1.0 / frequency)
+            time.sleep(1.0 / FREQUENCY)
+            timeout_counter += FREQUENCY
+            if timeout_counter > TIMEOUT: 
+                timeout_counter = FREQUENCY
+                return 1100
             return self.id
 
-    def process_with_pre_and_post_state(self, frequency=1.0):
-        on_enter_result_id = self.on_enter(frequency)
+    def process_with_pre_and_post_state(self, timeout_counter):
+        on_enter_result_id = self.on_enter(FREQUENCY, timeout_counter)
         if on_enter_result_id:
             return on_enter_result_id
-        result_id = self.process_with_post_state(frequency)
+        result_id = self.process_with_post_state(FREQUENCY, timeout_counter)
         if result_id:
             return result_id
         return None
     
-    def process_with_post_state(self, frequency=1.0):
-        result_id = self.process(frequency)
+    def process_with_post_state(self, timeout_counter):
+        result_id = self.process(FREQUENCY, timeout_counter)
         if result_id:
             return result_id
-        on_exit_result_id = self.on_exit(frequency)
+        on_exit_result_id = self.on_exit(FREQUENCY, timeout_counter)
         if on_exit_result_id:
             return on_exit_result_id
         return None

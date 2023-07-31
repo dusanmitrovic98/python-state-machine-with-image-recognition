@@ -2,8 +2,11 @@ import os
 
 MY_USERNAME = "bk20198"
 
-FREQUENCY = 1
-THRESHOLD = 0.9
+FREQUENCY = 0.5
+THRESHOLD = 0.8
+TIMEOUT = FREQUENCY * 100
+TIMEOUT_REGENERATION_STATE = 1100
+TIMEOUT_COUNTER = FREQUENCY
 
 NUM_BACKSPACES_PRESSES = 13
 
@@ -34,6 +37,11 @@ img_wa_15 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img
 img_wa_16 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_16.jpg"))
 img_wa_17 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_17.jpg"))
 img_wa_18 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_18.jpg"))
+img_wa_19 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_19.jpg"))
+img_wa_20 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_20.jpg"))
+img_wa_21 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_21.jpg"))
+img_wa_22 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_22.jpg"))
+img_wa_23 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_23.jpg"))
 img_wa_99 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_99.jpg"))
 
 img_tg_100 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_100.jpg"))
@@ -49,3 +57,7 @@ img_tg_109 = os.path.join(os.path.join(current_directory, "images\\transfer_gold
 img_tg_110 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_110.jpg"))
 img_tg_111 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_111.jpg"))
 img_tg_112 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_112.jpg"))
+
+
+img_1100 = os.path.join(os.path.join(current_directory, "images\\img_1100.jpg"))
+img_1101 = os.path.join(os.path.join(current_directory, "images\\img_1101.jpg"))

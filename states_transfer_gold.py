@@ -98,7 +98,7 @@ STATES = [
         image_paths=[img_tg_109, img_tg_111],
         actions=[click] * 2,
         durations=[FREQUENCY] * 2,
-        next_states=[113, 115]
+        next_states=[113, END_STATE_TRANSFER_GOLD]
     ),
     State(
         id=113,

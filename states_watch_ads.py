@@ -38,28 +38,16 @@ STATES = [
     ),
     State(
         id=14, # ! x button clicked
-        image_paths=[img_wa_19, img_wa_20, img_wa_21, img_wa_18, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_25, img_wa_22, img_wa_99],
-        actions=[click] * 11,
-        durations=[FREQUENCY] * 11,
-        next_states=[14] + [13] * 2 + [16] + [13] * 5 + [15] + [END_STATE_WATCH_ADS]
+        image_paths=[img_wa_19, img_wa_20, img_wa_21, img_wa_18, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_25, img_wa_24, img_wa_22, img_wa_99],
+        actions=[click] * 12,
+        durations=[FREQUENCY] * 12,
+        next_states=[14] + [13] * 2 + [13] + [13] * 6 + [15] + [END_STATE_WATCH_ADS]
     ), State(
         id=15, # ! watch ads button clicked
         image_paths=[img_wa_23],
         actions=[click],
         durations=[FREQUENCY],
         next_states=[13]
-    ),  State(
-        id=16, # ! ok button
-        image_paths=[img_wa_24],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[13]
-    ),  State(
-        id=17, # ! ok button
-        image_paths=[img_wa_24],
-        actions=[click],
-        durations=[FREQUENCY],
-        next_states=[END_STATE_WATCH_ADS]
     ), State(
         id=1100, # ! timeout regeneration
         image_paths=[img_1100],

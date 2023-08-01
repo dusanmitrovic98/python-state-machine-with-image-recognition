@@ -47,14 +47,14 @@ def set_pre_post_states(states):
         state.post_states[0].next_states.append(1)
         # ! state.pre_states = GENERAL_PRE_STATES
         # ! state.pre_states[0].append(state.id)
-        if state.id == 13:
-            state.post_states.append( State(
-                                        id=14, # ! x button clicked
-                                        image_paths=[img_wa_99, img_wa_19, img_wa_20, img_wa_21, img_wa_18, img_wa_14, img_wa_15, img_wa_16, img_wa_17],
-                                        actions=[click] * 9,
-                                        durations=[FREQUENCY] * 9,
-                                        next_states=[END_STATE_WATCH_ADS, 14] + [13] * 7
-                                    ))
+        # if state.id == 13:
+            # state.post_states.append( State(
+            #                             id=14, # ! x button clicked
+            #                             image_paths=[img_wa_99, img_wa_19, img_wa_20, img_wa_21, img_wa_18, img_wa_14, img_wa_15, img_wa_16, img_wa_17],
+            #                             actions=[click] * 9,
+            #                             durations=[FREQUENCY] * 9,
+            #                             next_states=[END_STATE_WATCH_ADS, 14] + [13] * 7
+            #                         ))
             # state.post_states.append(State(
             #                             id=10, # ! shop button
             #                             image_paths=[img_wa_10],

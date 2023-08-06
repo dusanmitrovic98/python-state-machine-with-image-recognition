@@ -1,10 +1,10 @@
 import os
 
-MY_USERNAME = "bk20198"
+MY_USERNAME = "bk2019"
 
-FREQUENCY = 0.5
+FREQUENCY = 1
 THRESHOLD = 0.85
-TIMEOUT = FREQUENCY * 80
+TIMEOUT = FREQUENCY * 50
 TIMEOUT_REGENERATION_STATE = 1100
 timeout_counter = FREQUENCY
 
@@ -44,6 +44,9 @@ img_wa_22 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img
 img_wa_23 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_23.jpg"))
 img_wa_24 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_24.jpg"))
 img_wa_25 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_25.jpg"))
+img_wa_26 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_26.jpg"))
+img_wa_27 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_27.jpg"))
+img_wa_28 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_28.jpg"))
 img_wa_99 = os.path.join(os.path.join(current_directory, "images\\watch_ads\\img_wa_99.jpg"))
 
 img_tg_100 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_100.jpg"))
@@ -59,6 +62,7 @@ img_tg_109 = os.path.join(os.path.join(current_directory, "images\\transfer_gold
 img_tg_110 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_110.jpg"))
 img_tg_111 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_111.jpg"))
 img_tg_112 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_112.jpg"))
+img_tg_113 = os.path.join(os.path.join(current_directory, "images\\transfer_gold\\img_tg_113.jpg"))
 
 img_cd_201 = os.path.join(os.path.join(current_directory, "images\\clear_data\\img_cd_201.jpg"))
 img_cd_202 = os.path.join(os.path.join(current_directory, "images\\clear_data\\img_cd_202.jpg"))

@@ -1,12 +1,12 @@
 import os
 
-from states_event_cute_vs_creepy import STATES as STATES_EVENT_CUTE_VS_CREEPY
 from states_account_creation import STATES as STATES_ACCOUNT_CREATION
+from states_watch_ads import STATE_14, STATES as STATES_WATCH_ADS
 from states_transfer_gold import STATES as STATES_TRANSFER_GOLD
-from states_watch_ads import STATES as STATES_WATCH_ADS
+from config import FREQUENCY, img_acc_01, img_wa_10, img_wa_14
+from states_clear_data import STATES as STATES_CLEAR_DATA
 from click_position import click
 from state import State
-from config import END_STATE_WATCH_ADS, FREQUENCY, img_acc_01, img_wa_10, img_wa_14, img_wa_15, img_wa_16, img_wa_17, img_wa_18, img_wa_19, img_wa_20, img_wa_21, img_wa_99
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 img_1000 = os.path.join(os.path.join(current_directory, "images\\img_1000.jpg"))
@@ -48,13 +48,7 @@ def set_pre_post_states(states):
         # ! state.pre_states = GENERAL_PRE_STATES
         # ! state.pre_states[0].append(state.id)
         if state.id == 13:
-            state.post_states.append( State(
-                                        id=14, # ! x button clicked
-                                        image_paths=[img_wa_99, img_wa_19, img_wa_20, img_wa_21, img_wa_18, img_wa_14, img_wa_15, img_wa_16, img_wa_17],
-                                        actions=[click] * 9,
-                                        durations=[FREQUENCY] * 9,
-                                        next_states=[END_STATE_WATCH_ADS, 14] + [13] * 7
-                                    ))
+            state.post_states.append(STATE_14)
             state.post_states.append(State(
                                         id=10, # ! shop button
                                         image_paths=[img_wa_10],
@@ -62,14 +56,12 @@ def set_pre_post_states(states):
                                         durations=[FREQUENCY],
                                         next_states=[11]
                                     ))
-        if state.id == 201 or state.id == 202: # ! clear pre states for state 201 and 202
+
+        if state.id > 101:
             state.pre_states = []
+            state.post_states = []
 
     return states
 
-# ! account creation
-# STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION]))
-# ! event cute vs creepy
-# STATES = set_pre_post_states(merge_states([STATES_EVENT_CUTE_VS_CREEPY]))
 # ! gold collection
-STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION, STATES_WATCH_ADS, STATES_TRANSFER_GOLD]))
+STATES = set_pre_post_states(merge_states([STATES_ACCOUNT_CREATION, STATES_WATCH_ADS, STATES_TRANSFER_GOLD, STATES_CLEAR_DATA]))

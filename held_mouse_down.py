@@ -8,7 +8,7 @@ def held_mouse_down(values):
     start_x += target_image.shape[1] // 2
     start_y += target_image.shape[0] // 2
     destination_x = start_x
-    destination_y = start_y + 400
+    destination_y = start_y + 600
     pyautogui.mouseDown(x=start_x, y=start_y)
     pyautogui.moveTo(destination_x, destination_y, duration=1.0)
     pyautogui.mouseUp()
